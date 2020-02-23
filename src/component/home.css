@@ -1,0 +1,30 @@
+#base {
+  width: 1000px;
+  height: 1000px;
+  max-width: 500px;
+  max-height: 500px;
+  background-color: black;
+  position: absolute;
+}
+
+@keyframes blocker {
+  25% {
+    margin: 0px 400px;
+  }
+  50% {
+    margin: 400px 400px;
+  }
+  75% {
+    margin: 400px 0px;
+  }
+}
+
+.tester {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+
+  animation-name: blocker;
+  animation-iteration-count: infinite;
+  animation-duration: 4s;
+}
